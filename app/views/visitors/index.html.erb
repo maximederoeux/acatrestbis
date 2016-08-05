@@ -1,17 +1,93 @@
-<!-- Page Content -->
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#general-info">Infos</a></li>
+  <li role="presentation"><a href="#menu">Menu</a></li>
+  <li role="presentation"><a href="#reservations">Réservations</a></li>
+</ul>
+
 <div class="container">
 
+
+<section id="top-of-page">
+  <img class="img-responsive" src="assets/header.jpg" alt="">
+</section>
+
+</div>
+<!-- Page Content -->
+<div class="container">
+  <section id="general-info">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>A Bootstrap Starter Template</h1>
-            <p class="lead">A Bootstrap HTML starter template from <a href="http://startbootstrap.com/">startbootstrap.com</a>.</p>
-            <ul class="list-unstyled">
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-            </ul>
+            <h1><%= @restaurant.name %></h1>
+            <p class="lead"><%= @restaurant.description %></p>
+            <p><%= @restaurant.address %> <%= @restaurant.city %> <%= @restaurant.city %> <%= @restaurant.country %></p>
+            <%= @restaurant.email %><br>
+            <%= @restaurant.phone %><br>
+            <%= @restaurant.mobile %><br>
         </div>
     </div>
     <!-- /.row -->
-
+  </section>
 </div>
-<!-- /.container -->
+
+<div class="container">
+  <section id="menu">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Notre Menu</h2>
+
+        </div>
+    </div>
+    <!-- /.row -->
+  </section>
+</div>
+
+<div class="container">
+  <section id="reservations">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Réservations</h2>
+
+        </div>
+    </div>
+    <!-- /.row -->
+  </section>
+</div>
+
+<div class="container">
+  <section id="pictures">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Nos photos</h2>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="assets/photo-1.jpg" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="assets/photo-2.jpg" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="assets/photo-3.jpg" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/meOvuCM21ik" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+

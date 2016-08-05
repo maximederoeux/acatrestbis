@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Openings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weekday</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Season</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @openings.each do |opening| %>
+      <tr>
+        <td><%= opening.weekday %></td>
+        <td><%= opening.open %></td>
+        <td><%= opening.close %></td>
+        <td><%= opening.season %></td>
+        <td><%= link_to 'Show', opening %></td>
+        <td><%= link_to 'Edit', edit_opening_path(opening) %></td>
+        <td><%= link_to 'Destroy', opening, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opening', new_opening_path %>

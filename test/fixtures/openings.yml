@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weekday: MyString
+  open: 2016-08-05 21:45:32
+  close: 2016-08-05 21:45:32
+  season: MyString
+
+two:
+  weekday: MyString
+  open: 2016-08-05 21:45:32
+  close: 2016-08-05 21:45:32
+  season: MyString

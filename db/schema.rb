@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803180552) do
+ActiveRecord::Schema.define(version: 20160805194532) do
+
+  create_table "openings", force: :cascade do |t|
+    t.string   "weekday"
+    t.time     "open"
+    t.time     "close"
+    t.string   "season"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "postcode"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "mobile"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "city"
+    t.string   "country"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

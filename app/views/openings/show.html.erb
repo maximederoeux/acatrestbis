@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weekday:</strong>
+  <%= @opening.weekday %>
+</p>
+
+<p>
+  <strong>Open:</strong>
+  <%= @opening.open %>
+</p>
+
+<p>
+  <strong>Close:</strong>
+  <%= @opening.close %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @opening.season %>
+</p>
+
+<%= link_to 'Edit', edit_opening_path(@opening) %> |
+<%= link_to 'Back', openings_path %>
